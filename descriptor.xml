@@ -1,0 +1,32 @@
+<vib version="5.0">
+  <type>bootbank</type>
+  <name>DRP-Firewall-Rule</name>
+  <version>5.0.0-0.0.1</version>
+  <vendor>RackN</vendor>
+  <summary>Custom VIB from RackN</summary>
+  <description>Adds custom firewall rule to allow outbound TCP traffic to DRPCLI</description>
+  <relationships>
+    <depends>
+    </depends>
+    <conflicts/>
+    <replaces/>
+    <provides/>
+    <compatibleWith/>
+  </relationships>
+  <software-tags>
+  </software-tags>
+  <system-requires>
+    <maintenance-mode>false</maintenance-mode>
+  </system-requires>
+  <file-list>
+  </file-list>
+  <acceptance-level>community</acceptance-level>
+  <live-install-allowed>true</live-install-allowed>
+  <live-remove-allowed>true</live-remove-allowed>
+  <cimom-restart>false</cimom-restart>
+  <stateless-ready>true</stateless-ready>
+  <overlay>false</overlay>
+  <payloads>
+    <payload name="payload1" type="vgz"></payload>
+  </payloads>
+</vib>
