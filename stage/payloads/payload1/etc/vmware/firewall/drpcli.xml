@@ -1,14 +1,39 @@
 <!-- Firewall configuration information for FDM -->
 <ConfigRoot>
-  <service>
-    <id>drpcli</id>
-    <rule id='0000'>
-        <direction>outbound</direction>
-        <protocol>tcp</protocol>
-        <porttype>dst</porttype>
-        <port>8092</port>
-    </rule>
-    <enabled>true</enabled>
-    <required>false</required>
+    <service>
+        <id>drpcli-out</id>
+        <rule id='0000'>
+            <direction>outbound</direction>
+            <protocol>tcp</protocol>
+            <porttype>dst</porttype>
+            <port>8092</port>
+        </rule>
+        <enabled>true</enabled>
+        <required>false</required>
     </service>
+
+    <service>
+        <id>drpcli-in</id>
+        <rule id='0001'>
+            <direction>inbound</direction>
+            <protocol>tcp</protocol>
+            <porttype>dst</porttype>
+            <port>8092</port>
+        </rule>
+        <enabled>true</enabled>
+        <required>false</required>
+    </service>
+
+    <service>
+        <id>drp-fs-out</id>
+        <rule id="0002">
+            <direction>inbound</direction>
+            <protocol>tcp</protocol>
+            <porttype>dst</porttype>
+            <port>8091</port>
+        </rule>
+        <enabled>true</enabled>
+        <required>false</required>
+    </service>
+
 </ConfigRoot>
